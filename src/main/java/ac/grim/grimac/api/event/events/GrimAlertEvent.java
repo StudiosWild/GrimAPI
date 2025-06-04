@@ -11,13 +11,13 @@ public class GrimAlertEvent extends GrimEvent implements Cancellable {
 
     private final GrimUser user;
     private final AbstractCheck check;
-    private final Map<String, Object> details;
+    private final String details;
 
     private final boolean verbose;
 
     private boolean cancelled;
 
-    public GrimAlertEvent(GrimUser user, AbstractCheck check, Map<String, Object> details, boolean verbose) {
+    public GrimAlertEvent(GrimUser user, AbstractCheck check, String details, boolean verbose) {
         this.user = user;
         this.check = check;
         this.details = details;
