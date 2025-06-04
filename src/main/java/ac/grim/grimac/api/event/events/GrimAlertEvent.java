@@ -4,6 +4,7 @@ import ac.grim.grimac.api.AbstractCheck;
 import ac.grim.grimac.api.GrimUser;
 import ac.grim.grimac.api.event.Cancellable;
 import ac.grim.grimac.api.event.GrimEvent;
+import lombok.Getter;
 
 import java.util.Map;
 
