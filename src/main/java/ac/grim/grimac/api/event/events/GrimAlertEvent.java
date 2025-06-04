@@ -9,10 +9,13 @@ import java.util.Map;
 
 public class GrimAlertEvent extends GrimEvent implements Cancellable {
 
+    @Getter
     private final GrimUser user;
+    @Getter
     private final AbstractCheck check;
+    @Getter
     private final String details;
-
+    @Getter
     private final boolean verbose;
 
     private boolean cancelled;
