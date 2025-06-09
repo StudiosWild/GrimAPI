@@ -6,7 +6,7 @@ import ac.grim.grimac.api.event.Cancellable;
 import ac.grim.grimac.api.event.GrimEvent;
 import lombok.Getter;
 
-public class GrimAlertEvent extends GrimEvent implements GrimUserEvent, Cancellable {
+public class AlertEvent extends GrimEvent implements GrimUserEvent, Cancellable {
 
     private final GrimUser user;
 
@@ -19,7 +19,7 @@ public class GrimAlertEvent extends GrimEvent implements GrimUserEvent, Cancella
 
     private boolean cancelled;
 
-    public GrimAlertEvent(GrimUser user, AbstractCheck check, String details, boolean verbose) {
+    public AlertEvent(GrimUser user, AbstractCheck check, String details, boolean verbose) {
         super(true);
         this.user = user;
         this.check = check;
