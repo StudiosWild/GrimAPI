@@ -6,7 +6,7 @@ public interface AbstractCheck extends AbstractProcessor, BasicStatus {
 
     String getCheckName();
 
-    String getCheckDescription();
+    String getDescription();
 
     default String getAlternativeName() {
         return getCheckName();
